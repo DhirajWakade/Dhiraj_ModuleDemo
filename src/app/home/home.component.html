@@ -1,0 +1,126 @@
+<!--Container-->
+<div class="container">
+  <!--1Row-->
+  <div class="row">
+    <div class="col-md-12">
+        <!--Silder start-->
+        <div style="padding-top: 10px;padding-bottom: 10px" id="carouselExampleIndicators" class="carousel slide jumbotron text-white rounded bg-dark" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row" style="height: 400px;">
+                  <div class="col-md-12 px-0">  
+                    <div class="p-1 p-md-3 text-white rounded bg-dark">
+                      <div class="px-0">
+                        <h3 class="display-6 font-italic">{{postSlider[0].title}}</h3>
+                        <img style="padding-right: 25px;padding-top: 15px;" class="rounded float-left sliderImg" [src]="baseUrl+postSlider[0].imageUrl" alt="First slide">
+                         <p  style="text-indent: 5em; " class="lead my-3 text">{{postSlider[0].content}} </p>
+                        <p class=""><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+                      </div>
+                    </div>  
+                  </div>  
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <div class="row" style="height: 400px;">
+                  <div class="col-md-12 px-0">  
+                    <div class="p-1 p-md-3 text-white rounded bg-dark">
+                      <div class="px-0">
+                        <h3 class="display-6 font-italic">{{postSlider[1].title}}</h3>
+                        <img style="padding-right: 25px;padding-top: 15px;" class="rounded float-left sliderImg" [src]="baseUrl+postSlider[1].imageUrl" alt="First slide">
+                         <p  style="text-indent: 5em; " class="lead my-3 text">{{postSlider[1].content}} </p>
+                        <p class=""><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+                      </div>
+                    </div>  
+                  </div>  
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <div class="row" style="height: 400px;">
+                  <div class="col-md-12 px-0">  
+                    <div class="p-1 p-md-3 text-white rounded bg-dark">
+                      <div class="px-0">
+                        <h3 class="display-6 font-italic">{{postSlider[2].title}}</h3>
+                        <img style="padding-right: 25px;padding-top: 15px;" class="rounded float-left sliderImg" [src]="baseUrl+postSlider[2].imageUrl" alt="First slide">
+                         <p  style="text-indent: 5em; " class="lead my-3 text">{{postSlider[2].content}} </p>
+                        <p class=""><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+                      </div>
+                    </div>  
+                  </div>  
+                </div>
+              </div>
+              <!----><!--
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-12 px-0">  
+                    <div class="p-1 p-md-3 text-white rounded bg-dark">
+                      <div class="px-0">
+                        <h3 class="display-6 font-italic">{{postList[1].title}}</h3>
+                        <img style="padding-right: 25px;padding-top: 15px;" class="rounded float-left sliderImg" [src]="baseUrl+postList[1].imageUrl" alt="First slide">
+                         <p  style="text-indent: 5em;" class="lead my-3">{{postList[1].content}}</p>
+                        <p class=""><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+                      </div>
+                    </div>  
+                  </div>  
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-12 px-0">  
+                    <div class="p-1 p-md-3 text-white rounded bg-dark">
+                      <div class="px-0">
+                        <h3 class="display-6 font-italic">{{postList[1].title}}</h3>
+                        <img style="padding-right: 25px;padding-top: 15px;" class="rounded float-left sliderImg" [src]="baseUrl+postList[1].imageUrl" alt="First slide">
+                         <p  style="text-indent: 5em;" class="lead my-3">{{postList[1].content}}</p>
+                        <p class=""><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+                      </div>
+                    </div>  
+                  </div>  
+                </div>
+              </div>  --> 
+          </div>
+        </div>
+      <!--/Silder start-->
+    </div>
+  </div>
+  <!--1Row end-->
+  <!--2Row start-->
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">          
+          <h6 class="mb-0">{{postCard[0].title}}</h6>
+          <div class="mb-1 text-muted">Nov 12</div>
+          <p class="card-text mb-auto">{{postCard[0].content}}</p>
+          <a href="#" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img style="width:230px;height:250px;padding:20px" class="rounded float-left" [src]="baseUrl+postCard[0].imageUrl">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">          
+          <h6 class="mb-0">{{postCard[1].title}}</h6>
+          <div class="mb-1 text-muted">Nov 12</div>
+          <p class="card-text mb-auto">{{postCard[1].content}}</p>
+          <a href="#" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img style="width:230px;height:250px;padding:20px" class="rounded float-left" [src]="baseUrl+postCard[1].imageUrl">
+        </div>
+      </div>
+    </div>
+    
+  <!--2Row end-->
+
+
+
+
+</div>
+<!--Container end-->
